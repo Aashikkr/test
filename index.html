@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+       <section class="calculator">
+        <form>
+            <input type="text" class="screen">
+        </form>
+        <div class="buttons">
+            <button type="button" class="btn btn-yellow" onclick="appendValue('*')" data-num="*">*</button>
+            <button type="button" class="btn btn-yellow" onclick="appendValue('/')" data-num="/">/</button>
+            <button type="button" class="btn btn-yellow" onclick="appendValue('-')" data-num="-">-</button>
+            <button type="button" class="btn btn-yellow" onclick="appendValue('+')" data-num="+">+</button>
+             
+            <button type="button" class="btn btn-grey" onclick="appendValue(9)" data-num="9">9</button>
+            <button type="button" class="btn btn-grey" onclick="appendValue(8)" data-num="8">8</button>
+            <button type="button" class="btn btn-grey" onclick="appendValue(7)"  data-num="7">7</button>
+            <button type="button" class="btn btn-grey" onclick="appendValue(6)" data-num="6">6</button>
+            <button type="button" class="btn btn-grey" onclick="appendValue(5)" data-num="5">5</button>
+            <button type="button" class="btn btn-grey" onclick="appendValue(4)" data-num="4">4</button>
+            <button type="button" class="btn btn-grey" onclick="appendValue(3)" data-num="3">3</button>
+            <button type="button" class="btn btn-grey" onclick="appendValue(2)" data-num="2">2</button>
+            <button type="button" class="btn btn-grey" onclick="appendValue(1)" data-num="1">1</button>
+            <button type="button" class="btn btn-grey" onclick="appendValue(0)" data-num="0">0</button>
+            <button type="button" class="btn btn-grey" onclick="appendValue('.')" data-num=".">.</button>
+
+            <button type="button" onclick="calculate()" class="btn btn-equal">=</button>
+            <button type="button" onclick="clearValue()" class="btn btn-clear">C</button>
+        </div>
+       </section>      
+    <script src="/script.js"></script>
+</body>
+</html>
